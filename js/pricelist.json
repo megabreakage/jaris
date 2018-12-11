@@ -1,0 +1,58 @@
+{
+	"vanilla": {
+		"one": 1000,
+		"one_half": 1600,
+		"two": 2400,
+		"three": 3000,
+		"four": 4200,
+		"five": 6400
+	},
+	"vanilla orange": {
+		"one": 1000,
+		"one_half": 1700,
+		"two": 2400,
+		"three": 3200,
+		"four": 4400,
+		"five": 6600
+	},
+	"vanilla lemon": {
+		"one": 1000,
+		"one_half": 1700,
+		"two": 2400,
+		"three": 3200,
+		"four": 4400,
+		"five": 6600
+	},
+	"vanilla combo": {
+		"one": 1000,
+		"one_half": 1800,
+		"two": 2500,
+		"three": 3200,
+		"four": 4400,
+		"five": 6600
+	},
+	"marble": {
+		"one": 1000,
+		"one_half": 1700,
+		"two": 2400,
+		"three": 3200,
+		"four": 4400,
+		"five": 6600
+	},
+	"light chocolate": {
+		"one": 1000,
+		"one_half": 1800,
+		"two": 2500,
+		"three": 3200,
+		"four": 4400,
+		"five": 6600
+	},
+	"strawberry": {
+		"one": 1000,
+		"one_half": 1800,
+		"two": 2400,
+		"three": 3000,
+		"four": 4200,
+		"five": 6400
+	}
+}

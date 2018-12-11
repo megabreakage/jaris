@@ -75,8 +75,14 @@ $(function() {
 		winScr = $(window).scrollTop();
         if (winScr >= 100) $('header').addClass('scrolled');
         else $('header').removeClass('scrolled');
+
+				if (winScr >= 100) $('.logo img').addClass('imgScrolled');
+        else $('.logo img').removeClass('imgScrolled');
+
+				if (winScr >= 100) $('.fontScroll a').addClass('imgScrolled');
+        else $('.fontScroll a').removeClass('imgScrolled');
 	};
-    
+
     /*=================================*/
 	/* 03 - function on document ready */
 	/*=================================*/
@@ -89,8 +95,8 @@ $(function() {
 	/*=====================*/
 	var initIterator = 0;
 	_functions.initSwiper = function(){
-		$('.swiper-container').not('.initialized').each(function(){								  
-			var $t = $(this);								  
+		$('.swiper-container').not('.initialized').each(function(){
+			var $t = $(this);
 
 			var index = 'swiper-unique-id-'+initIterator;
 
@@ -145,30 +151,30 @@ $(function() {
         closePopup();
 		return false;
 	});
-    
+
     function openPopup(foo){
         $('.popup-content').removeClass('active');
 		$('.popup-wrapper, .popup-content[data-rel="'+foo+'"]').addClass('active');
 		$('html').addClass('overflow-hidden');
     }
-    
+
     function closePopup(){
         $('.popup-wrapper, .popup-content').removeClass('active').find('.embed-responsive').html('');
 		$('html').removeClass('overflow-hidden');
     }
-    
+
     $('.open-video').on('click', function(){
         openPopup($(this).data('rel'));
         $('.popup-content[data-rel="'+$(this).data('rel')+'"]').find('.embed-responsive').html('<iframe class="embed-responsive-item" src="'+$(this).data('src')+'?autoplay=1&amp;controls=1&amp;loop=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;autohide=0&amp;color=white&amp;iv_load_policy=3&amp;wmode=transparent"></iframe>');
     });
-    
+
     //menuIcon toggle
     $('.menuIcon').on('click', function() {
         $(this).toggleClass('menuIconActive');
         $('.mobileWrapper').toggleClass('mobileActive');
     });
 
-    
+
 
 	//tabs
 	var tabsFinish = 0;
@@ -179,7 +185,7 @@ $(function() {
         	tabsMenu = tabsWrapper.find('.tab-menu'),
         	tabsItem = tabsWrapper.find('.tab-entry'),
         	index = tabsMenu.index(this);
-        
+
         tabsItem.filter(':visible').fadeOut(function(){
         	tabsItem.eq(index).fadeIn(function(){
         		tabsFinish = 0;
@@ -195,14 +201,14 @@ $(function() {
 		$(this).addClass('active').next().slideDown();
 	});
 
-    
+
     // Isotope
     var $grid = $('.grid').isotope({
       itemSelector: '.element-item',
       layoutMode: 'fitRows',
       columnWidth: '.grid-sizer'
     });
-    
+
     // filter functions
     var filterFns = {
       // show if name ends with -ium
@@ -211,7 +217,7 @@ $(function() {
         return name.match( /ium$/ );
       }
     };
-    
+
     // bind filter button click
     $('.filters-button-group').on( 'click', 'div', function() {
       var filterValue = $( this ).attr('data-filter');
@@ -219,7 +225,7 @@ $(function() {
       filterValue = filterFns[ filterValue ] || filterValue;
       $grid.isotope({ filter: filterValue });
     });
-    
+
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
       var $buttonGroup = $( buttonGroup );
@@ -228,15 +234,15 @@ $(function() {
         $( this ).addClass('is-checked');
       });
     });
-    
+
     var timeLineContent = '<div class="timeLineShortcode2"><div class="flexWrapper2"><div class="imgTimeLineWrapper rotateRight"><a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="img/history-time-line4.jpg" alt=""><span></span><span></span></a></div><div class="emptySpace20"></div><div class="normall contentTimeLineWrapper rotateLeft"><a href="blog2.html"><h4 class="h4">Vivamus nisl lorem</h4></a><div class="emptySpace15"></div><p>Integer ipsum ipsum, suscipit et gravida non, imperdiet eget nisl. Curabitur semper semper nunc, id suscipit diam ornare quis. Ut venenatis, diam nec blandit facilisis, mi justo porttitor risus</p>  </div>   </div><div class="monthWrapper"><h4 class="h4 historyMonth">21, November</h4></div></div>' + '<div class="timeLineShortcode2"><div class="flexWrapper2"><div class="imgTimeLineWrapper"><a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="img/history-time-line5.jpg" alt=""><span></span><span></span></a></div><div class="emptySpace25"></div><div class="normall contentTimeLineWrapper"><a href="blog2.html"><h4 class="h4">Fusce id elit et tellus egestas</h4></a><div class="emptySpace15"></div><p>Integer ipsum ipsum, suscipit et gravida non, imperdiet eget nisl. Curabitur semper semper nunc, id suscipit diam ornare quis. Ut venenatis, diam nec blandit facilisis, mi justo porttitor risus</p></div> </div><div class="monthWrapper"><h4 class="h4 historyMonth">29, September</h4></div></div>';
-    	
+
     $('.historySeeMore').on('click', function() {
         $(timeLineContent).insertBefore('.loadedMore');
     });
-    
+
     var timeLineContent2 = '<div class="timeLineShortcode"><h4 class="h4 month">19, July</h4><a class="imgLayer floatL2" href="blog3.html"><img class="imgShortcode" src="img/blog-image.jpg" alt=""><span></span><span></span></a><div class="normall contentTimeline"><a href="blog3.html"> <h4 class="h4">Fusce id elit et tellus egestas</h4></a><div class="emptySpace15"></div><p>Integer ipsum ipsum, suscipit et gravida non, imperdiet eget nisl. Curabitur semper semper nunc, id suscipit diam ornare quis. Ut venenatis, diam nec blandit facilisis, mi justo porttitor risus</p><div class="emptySpace15"></div><div class="small like"> <span>24</span></div><div class="small comment"> <span>65</span></div></div>   </div>' + '<div class="timeLineShortcode"><h4 class="h4 month">13, April</h4><a class="imgLayer floatL2" href="blog3.html"><img class="imgShortcode" src="img/blog-image2.jpg" alt=""><span></span><span></span></a><div class="normall contentTimeline"><a href="blog3.html"><h4 class="h4">Aenean egestas placerat</h4></a><div class="emptySpace15"></div><p>Integer ipsum ipsum, suscipit et gravida non, imperdiet eget nisl. Curabitur semper semper nunc,quis. Ut venenatis, diam nec blandit facilisis, mi justo porttitor risus</p><div class="emptySpace15"></div><div class="small like"> <span>35</span></div><div class="small comment"> <span>78</span></</div></div>';
-    
+
     $('.seeMore').on('click', function() {
        $(timeLineContent2).insertBefore('.seeMore');
     });
@@ -252,11 +258,11 @@ $(function() {
             animateInView: true
         });
     });
-	
+
 	//Menu-Drop-Down-Slide-Toggle
-	
+
 	$('.drowDownIcon').on('click', function(){
 		$(this).parent().find('.dropDownMenu').slideToggle(250);
 	});
-	
+
 });

@@ -53,7 +53,7 @@
     right: 0;
     bottom: 0;
     z-index: 12;
-    background: #484848;
+    background: #FFFF00;
 }
 
 .loaderShortcode {
@@ -75,7 +75,7 @@
 }
 
 .loaderLogo {
-    background: url(../img/invisio.png) no-repeat center center;
+    background: url(../img/skill-icon3.png) no-repeat center center;
     animation: loaderOpacity 800ms linear infinite alternate;
 }
 
@@ -446,7 +446,7 @@ body {
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 05 - EMPTY-SPACES */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
- 
+
 .emptySpace5 {
     height: 5px;
 }
@@ -945,7 +945,7 @@ body {
 }
 
 .button:hover {
-    background: #fec300;
+    background: #FFFF00;
     color: #6d3a2f;
 }
 
@@ -973,8 +973,8 @@ body {
     border: 1px solid #6d3a2f;
 }
 
-.button:hover:before, 
-.button:focus:before, 
+.button:hover:before,
+.button:focus:before,
 .button:active:before {
     -webkit-animation-name: border-out;
     animation-name: border-out;
@@ -1018,7 +1018,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    background: #fec300;
+    background: #FFFF00;
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
 }
@@ -1129,27 +1129,44 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 170px;
+    height: 250px;
     z-index: 11;
     text-align: center;
     backface-visibility: hidden;
 }
+container{
+  padding-top: 0 !important;
+}
 
 .logo {
+  padding: 0 !important;
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -150px;
 	width: 300px;
-	height: 180px;
-	background: url(../img/logo-bg.png) no-repeat 50% 0%;
+	height: 200px;
+	background: url(../img/jaris_logo) no-repeat 50% 50%;
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
+    z-index: -90;
 }
 
 .logo img {
-	max-width: 135px;
-	max-height: 85px;
+  top: 0;
+	max-width: 100%;
+	max-height: 100%;
+	-webkit-transform: translateY(28px);
+	transform: translateY(28px);
+	-webit-transition: all 150ms linear;
+	transition: all 150ms linear;
+  z-index: -1;
+}
+
+.imgScrolled{
+  top: 0;
+	max-width: 80px;
+	max-height: 40px;
 	-webkit-transform: translateY(28px);
 	transform: translateY(28px);
 	-webit-transition: all 150ms linear;
@@ -1176,12 +1193,12 @@ nav > ul > li {
     margin-right: 68px;
 }
 
-nav li:hover .dropDownMenu {
+/* nav li:hover .dropDownMenu {
 	opacity: 1;
 	visibility: visible;
 	-webkit-transform: translateY(24px);
 	transform: translateY(24px);
-}
+} */
 
 nav li:last-child {
     margin-right: 0;
@@ -1194,7 +1211,7 @@ nav a {
     font-weight: 900;
     font-family: 'Philosopher';
     text-align: center;
-    color: #fff;
+    color: #EF6C00 !important;
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
 }
@@ -1202,7 +1219,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: #fec300;
+    color: #EF6C00 !important;
 }
 
 
@@ -1213,7 +1230,7 @@ nav a:hover:after {
 }
 .headerActive {
     position: relative;
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .headerActive:before {
@@ -1227,7 +1244,7 @@ nav a:hover:after {
     content: '';
     width: 100%;
     height: 1px;
-    background: #fec300;
+    background: #FFFF00;
 }
 
 .headerActive:after {
@@ -1241,7 +1258,7 @@ nav a:hover:after {
     content: '';
     width: 100%;
     height: 1px;
-    background: #fec300;
+    background: #FFFF00;
 }
 
 .leftMenu {
@@ -1274,7 +1291,7 @@ nav a:hover:after {
 }
 
 .headerLike:hover .likeHear {
-	color: #fec300;
+	color: #FFFF00;
 }
 
 .headerLike {
@@ -1343,7 +1360,7 @@ nav a:hover:after {
 }
 
 .headerSocial:hover .headerSocialIcon {
-	color: #fec300;
+	color: #EF6C00;
 }
 
 .headerF {
@@ -1409,7 +1426,7 @@ nav a:hover:after {
 }
 
 .headerSearchIcon:hover {
-	color: #fec300;
+	color: #FFFF00;
 }
 
 .popupSearch {
@@ -1429,7 +1446,7 @@ nav a:hover:after {
 
 .popupSearch:hover,
 .popupSearch:focus {
-    border-color: #fec300;
+    border-color: #FFFF00;
 }
 
 .searchicon {
@@ -1457,18 +1474,22 @@ nav a:hover:after {
 }
 
 .searchPopUpIcon:hover {
-	color: #fec300;
+	color: #FFFF00;
 }
 
 .scrolled {
-    background: #000;
+    background: #FFFF00;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
+    color: ##EF6C00 !important;
 }
 
 header.scrolled {
     height: 80px;
+}
+a.scrolled{
+  color: ##EF6C00 !important;
 }
 
 .menuIcon {
@@ -1525,13 +1546,13 @@ header.scrolled {
 .menuIconActive span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background: #fec300;
+    background: #FFFF00;
 }
 
 .menuIconActive span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background: #fec300;
+    background: #FFFF00;
 }
 
 /*Drop-Down-Menu*/
@@ -1542,7 +1563,7 @@ header.scrolled {
     top: 100%;
     left: 50%;
     width: 160px;
-    background: #000;
+    background: #FFFF00;
     margin-top: -26px;
     margin-left: -80px;
     visibility: hidden;
@@ -1583,12 +1604,12 @@ header.scrolled {
 		content: '';
 		width: 100%;
 		height: 1px;
-		background: #fec300;
+		background: #FFFF00;
 		opacity: 0;
 		-webkit-transform: translate(-55px);
 		transform: translate(-55px);
 		-webkit-transition: all 220ms linear;
-		transition: all 220ms linear
+		transition: all 220ms linear;
     }
 
     nav a:hover:before {
@@ -1605,7 +1626,7 @@ header.scrolled {
 		content: '';
 		width: 100%;
 		height: 1px;
-		background: #fec300;
+		background: #FFFF00;
 		opacity: 0;
 		-webkit-transform: translate(55px);
 		transform: translate(55px);
@@ -1648,7 +1669,7 @@ header.scrolled {
         width: 100%;
         max-height: 100%;
         overflow: auto;
-        background: #000;
+        background: #FFFF00;
         padding: 100px 0 75px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
 		-webkit-transform: translateY(-100%);
@@ -1659,7 +1680,7 @@ header.scrolled {
     .mobileActive {
 		-webkit-transform: translateY(0px);
         transform: translateY(0px);
-    }  
+    }
     .scrolled:before {
         position: absolute;
         top: 0;
@@ -1667,13 +1688,15 @@ header.scrolled {
         left: 0;
         content: '';
         height: 60px;
-        background: #000;
+        background: #FFFF00;
         z-index: 3;
-    }  
+        color: #000 !important;
+    }
     .logo {
         z-index: 5;
 		width: 150px;
 		height: 85px;
+    text-align: center !important;
     }
 	.logo img {
 		-webkit-transform: translateY(14px);
@@ -1724,6 +1747,7 @@ header.scrolled {
         left: 15px;
         margin-left: 0;
         z-index: 3;
+        position: relative;
     }
     .logo span {
         display: none;
@@ -1750,7 +1774,7 @@ header.scrolled {
 		padding-left: 9px;
 	}
 	.headerLike {
-		
+
 	}
 }
 
@@ -1763,13 +1787,13 @@ header.scrolled {
         height: 80px;
     }
     .logo {
-        
+
     }
     .logoWrapper .h5 {
         display: none;
     }
     .menuIcon {
-        
+
     }
     .searchicon {
         width: 40px;
@@ -1788,12 +1812,12 @@ header.scrolled {
 .bgWhite .h4,
 .bgWhite .h5,
 .bgWhite .h6  {
-    color: #323232;
+    color: #323232 !important;
     font-family: "Philosopher";
 }
 
 .bgWhite .h5 {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .bgWhite .normall {
@@ -1826,7 +1850,7 @@ header.scrolled {
     position: relative;
     background-attachment: fixed;
 }
-.bgImages .button:before, 
+.bgImages .button:before,
 .bgImages .button:after {
     border-color: #fff;
 }
@@ -1842,7 +1866,7 @@ header.scrolled {
 
 .bgImages .h3,
 .bgImages .h5 {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .bgImages .normall {
@@ -1863,7 +1887,7 @@ header.scrolled {
 
 .bgImages .bottomLine:before,
 .bgImages .bottomLine:after {
-    background: #fff;
+    background: #FFFF00;
 }
 
 .flexWrapper,
@@ -1909,7 +1933,7 @@ header.scrolled {
 }
 
 .contentShortcode:hover .h4 {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .desShortcode {
@@ -1937,7 +1961,7 @@ header.scrolled {
     content: '';
     width: 85px;
     height: 1px;
-    background: #000;
+    background: #FFFF00;
     margin-left: -42px;
 }
 
@@ -1950,7 +1974,7 @@ header.scrolled {
     content: '';
     width: 85px;
     height: 1px;
-    background: #000;
+    background: #FFFF00;
     margin-left: -42px;
 }
 
@@ -2008,14 +2032,14 @@ header.scrolled {
 .sweetPrice2 {
     font-size: 30px;
     font-family: 'Philosopher';
-    color: #fec300;
+    color: #FFFF00;
     padding: 67px 55px;
     position: relative;
     display: inline-block
 }
 
 .sweetPrice2:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 .sweetPrice2:before {
     position: absolute;
@@ -2047,7 +2071,7 @@ header.scrolled {
 }
 
 .goodiesShortcode:hover .h4 {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .imgLayer {
@@ -2081,7 +2105,7 @@ header.scrolled {
 .imgLayer span {
     width: 50px;
     height: 2px;
-    background: #fec300;
+    background: #FFFF00;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2137,7 +2161,7 @@ header.scrolled {
 }
 
 .servicesShortcode .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .services,
@@ -2267,6 +2291,9 @@ header.scrolled {
     -webkit-transition: all 150ms linear;
     transition: all 150ms linear;
 }
+.phone a:active, .phone a:visited{
+  color: fec300;
+}
 
 .social,
 .social2 {
@@ -2296,7 +2323,7 @@ header.scrolled {
 }
 
 .social:hover .footerSocial {
-	color: #fec300;
+	color: #FFFF00;
 }
 
 .footerF {
@@ -2315,7 +2342,7 @@ header.scrolled {
 }
 
 .footerPi {
-	margin-left: -8px;	
+	margin-left: -8px;
 	margin-top: -12px;
 }
 
@@ -2357,7 +2384,7 @@ header.scrolled {
 
 .inst:hover span,
 .phone:hover span {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .instagram {
@@ -2443,7 +2470,7 @@ header.scrolled {
 }
 
 @media (max-width: 767px) {
-    .aboutUsImg { 
+    .aboutUsImg {
         position: relative;
         display: inline-block;
     }
@@ -2516,7 +2543,7 @@ header.scrolled {
 .historyYear {
     padding: 34px;
     position: relative;
-    color: #fec300 !important;
+    color: #FFFF00 !important;
     font-family: "Philosopher";
 }
 
@@ -2580,7 +2607,7 @@ header.scrolled {
 }
 
 .contentTimeLineWrapper .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .rotateRight {
@@ -2624,7 +2651,7 @@ header.scrolled {
 }
 
 .historyMonth {
-    color: #fec300 !important;
+    color: #FFFF00 !important;
     padding: 15px 0;
     text-align: center;
 }
@@ -2662,7 +2689,7 @@ header.scrolled {
 }
 
 .historyPlus span {
-    background: #fec300 !important;
+    background: #FFFF00 !important;
 }
 
 .historyPlus:before {
@@ -2691,7 +2718,7 @@ header.scrolled {
     left: 50%;
     margin-left: -48px;
     cursor: pointer;
-    
+
 }
 
 .historySeeMore:before {
@@ -2798,7 +2825,7 @@ header.scrolled {
         width: 100%;
         text-align: center;
     }
-    
+
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -2825,7 +2852,7 @@ header.scrolled {
 
 .filterBtn:hover,
 .is-checked {
-    color: #fec300;
+    color: #EF6C00;
 }
 
 
@@ -2909,7 +2936,7 @@ header.scrolled {
 .social3:hover .shareF,
 .social3:hover .shareT,
 .social3:hover .shareIn {
-	color: #fec300;
+	color: #FFFF00;
 }
 
 .shareT,
@@ -3002,7 +3029,7 @@ header.scrolled {
 .social2:hover .shareT2,
 .social2:hover .sharePi2,
 .social2:hover .shareIn2{
-	color: #fec300;
+	color: #FFFF00;
 }
 
 /*Media-Queries*/
@@ -3065,7 +3092,7 @@ header.scrolled {
 }
 
 .whiteWrapper .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .whiteWrapper p {
@@ -3089,20 +3116,20 @@ header.scrolled {
 }
 
 .servicesShortcode2 .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .sweetPrice3 {
     font-size: 24px;
     font-family: 'Philosopher';
-    color: #fec300;
+    color: #FFFF00;
     padding: 65px 55px;
     position: relative;
     display: inline-block
 }
 
 .sweetPrice3:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .sweetPrice3:before {
@@ -3145,7 +3172,7 @@ header.scrolled {
 }
 
 .skillShortcode .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .icon {
@@ -3171,8 +3198,8 @@ _:-ms-input-placeholder, :root .icon {
 /*Media-Queries*/
 
 @media (max-width: 991px) {
-	.services:after, 
-	.services2:after, 
+	.services:after,
+	.services2:after,
 	.contacts:after {
 		background-size: contain;
 	}
@@ -3261,7 +3288,7 @@ _:-ms-input-placeholder, :root .icon {
     padding: 13px 0;
     position: absolute;
     top: 50%;
-    left: 89px; 
+    left: 89px;
     margin-top: -27px;
     color: #6d3a2f !important;
     width: 154px;
@@ -3342,7 +3369,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .contentTimeline .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .like {
@@ -3407,7 +3434,7 @@ _:-ms-input-placeholder, :root .icon {
     width: 13px;
     height: 2px;
     background: #6d3a2f;
-    
+
 }
 
 .plus span:first-child,
@@ -3462,8 +3489,8 @@ _:-ms-input-placeholder, :root .icon {
         left: 50%;
         margin-left: -77px;
     }
-    .year, 
-    .year2, 
+    .year,
+    .year2,
     .seeMore {
         left: 0;
         padding: 20px 0;
@@ -3495,7 +3522,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .titleShortcode2 .h2:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .switchContent {
@@ -3513,11 +3540,11 @@ _:-ms-input-placeholder, :root .icon {
 
 .switchContent:hover,
 .switchContent:focus {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .switchContentActive {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .eventWrapper {
@@ -3541,7 +3568,7 @@ _:-ms-input-placeholder, :root .icon {
 .persone:hover,
 .calendar:hover,
 .event:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .calendar {
@@ -3840,7 +3867,7 @@ _:-ms-input-placeholder, :root .icon {
 .contentShortcode6 .h4:hover,
 .dateAndPersone a:hover,
 .contentShortcode7 .h4:hover{
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .contentShortcode7 {
@@ -3873,7 +3900,7 @@ _:-ms-input-placeholder, :root .icon {
     content: 'recipes';
     font-size: 12px;
     font-family: 'Philosopher';
-    background: #fec300;
+    background: #FFFF00;
     padding: 8px 10px;
     text-transform: uppercase;
     color: #fff;
@@ -3884,7 +3911,7 @@ _:-ms-input-placeholder, :root .icon {
 
 .recipes:hover:before {
     background: #6d3a2f;
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .sideBarContent a {
@@ -3896,7 +3923,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .sideBarContent a:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .blogTags {
@@ -3916,7 +3943,7 @@ _:-ms-input-placeholder, :root .icon {
 
 .blogTags:hover {
     background: #6d3a2f;
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .instBox {
@@ -3952,7 +3979,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .commentBox a:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .personeInfo {
@@ -3994,7 +4021,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .replyComment:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .commentAnswer {
@@ -4089,7 +4116,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .contentShortcode3 .h4:hover {
-    color: #fec300;
+    color: #FFFF00;
 }
 
 .contentShortcode3 p {
@@ -4220,7 +4247,7 @@ _:-ms-input-placeholder, :root .icon {
 }
 
 .contactPhone:hover {
-	color: #fec300;
+	color: #FFFF00;
 }
 
 #map-canvas {
@@ -4240,7 +4267,7 @@ body.mobile .tableCellVH2 {
 }
 
 /*Media-Queries*/
-    
+
 @media (min-width: 1200px) {}
 
 @media (max-width: 1199px) {}
@@ -4497,4 +4524,73 @@ body.mobile .tableCellVH2 {
     .button {
         width: 100%;
     }
+}
+
+.pt{
+  padding-top: 10px;
+}
+.pb{
+  padding-bottom: 10px;
+}
+
+.totals{
+  font: green !important;
+}
+.total{
+  font-size: 24px;
+  font-weight: bold !important;
+  color: Blue !important;
+}
+
+.tillNumber h3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: green;
+  letter-spacing: 45px !important;
+  text-align: center !important;
+  color: black !important;
+  font-weight: bolder;
+  font-size: 46px;
+  font-family: 'Philosopher';
+}
+.priceList th{
+  font-weight: bold !important;
+}
+.payment span{
+  font-weight: bold !important;
+}
+span#deposit{
+  text-decoration: underline !important;
+  color: green !important:
+}
+p#notice{
+  color: red !important;
+  font-style: italic !important;
+}
+.hidden{
+  display: none;
+}
+textarea{
+  white-space: pre-line !important;
+  white-space: pre-wrap !important;
+}
+.prodImg img{
+  height: 380px;
+  width: 100%;
+}
+.fontScroll{
+  color: #000000 !important;
+}
+.swiperContacts{
+  font-size: 25px;
+  font-family: Philosopher;
+}
+.swiperContacts a{
+  color: yellow !important;
+}
+.swiperContacts a:hover{
+  color: #EF6C00 !important;
+}
+.swiperContacts i{
+  color: #fff !important;
 }

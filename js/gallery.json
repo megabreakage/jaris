@@ -1,0 +1,65 @@
+{
+  "vanilla Cake":{
+    "name": "Vanilla Cake",
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+  "Vanilla Orange Cake":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+
+  "Vanilla Lemon Cake":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+
+  "Vanilla Combo Cake":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+
+  "Marble Cake":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+
+  "Light Chocolate":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+
+  "strawberry":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  },
+
+  "coconut":{
+    "description": "This is a Vanilla Cake",
+    "price": 1600.00,
+    "ingredients": "Flour, eggs, vanilla essence, butter, sugar",
+    "image_link": "img/main-slide.png",
+    "filter": "Birthday"
+  }
+}
